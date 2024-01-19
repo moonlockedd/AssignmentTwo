@@ -17,13 +17,22 @@ public class Main {
         Employee employee2 = new Employee(
                 "Elton", "John", "Singer", 250000);
 
-        ArrayList<Person> studentsAndEmployees = new ArrayList<>();
-        studentsAndEmployees.add(student1);
-        studentsAndEmployees.add(student2);
-        studentsAndEmployees.add(student3);
-        studentsAndEmployees.add(employee1);
-        studentsAndEmployees.add(employee2);
+        ArrayList<Person> people = new ArrayList<>();
 
+        people.add(employee1);
+        people.add(employee2);
+        people.add(student2);
+        people.add(student3);
+        people.add(student1);
 
+        printData(people);
+    }
+
+    public static void printData(Iterable<Person> people) {
+        for (Person p : people) {
+            System.out.println(
+                    p + " earns " + p.getPaymentAmount() + " tenge"
+            );
+        }
     }
 }
