@@ -1,4 +1,8 @@
-public abstract class Person {
+package entities;
+
+import interfaces.Payable;
+
+public abstract class Person implements Payable {
     private static int id_gen = 1;
     private final int id;
     private String name;

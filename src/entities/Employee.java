@@ -1,3 +1,5 @@
+package entities;
+
 public class Employee extends Person {
     private String position;
     private double salary;
@@ -12,11 +14,6 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    @Override
-    public String getPosition() {
-        return position;
-    }
-
     public void setPosition(String position) {
         this.position = position;
     }
@@ -27,6 +24,16 @@ public class Employee extends Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String getPosition() {
+        return position;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return getSalary();
     }
 
     @Override

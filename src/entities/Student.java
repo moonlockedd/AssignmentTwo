@@ -1,5 +1,9 @@
+package entities;
+
 public class Student extends Person {
     private double gpa;
+    private static final double STIPEND = 36660.00;
+    private static final double MIN_GPA = 2.67;
 
     public Student() {
         super();
@@ -21,6 +25,11 @@ public class Student extends Person {
     @Override
     public String getPosition() {
         return "Student";
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return getGpa() > MIN_GPA ? STIPEND : 0.00;
     }
 
     @Override
