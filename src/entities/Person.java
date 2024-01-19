@@ -14,13 +14,14 @@ public abstract class Person implements Payable, Comparable<Person> {
 
     public Person(String name, String surname) {
         this();
-        this.name = name;
-        this.surname = surname;
+        setName(name);
+        setSurname(surname);
     }
 
     public int getId() {
         return id;
     }
+
     public String getName() {
         return name;
     }

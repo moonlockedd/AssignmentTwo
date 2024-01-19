@@ -9,9 +9,11 @@ public class Employee extends Person {
     }
 
     public Employee(String name, String surname, String position, double salary) {
-        super(name, surname);
-        this.position = position;
-        this.salary = salary;
+        this();
+        setName(name);
+        setSurname(surname);
+        setPosition(position);
+        setSalary(salary);
     }
 
     public double getSalary() {

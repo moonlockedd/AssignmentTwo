@@ -10,15 +10,17 @@ public class Student extends Person {
     }
 
     public Student(String name, String surname, double gpa) {
-        super(name, surname);
-        this.gpa = gpa;
+        this();
+        setName(name);
+        setSurname(surname);
+        setGPA(gpa);
     }
 
-    public double getGpa() {
+    public double getGPA() {
         return gpa;
     }
 
-    public void setGpa(double gpa) {
+    public void setGPA(double gpa) {
         this.gpa = gpa;
     }
 
@@ -29,7 +31,7 @@ public class Student extends Person {
 
     @Override
     public double getPaymentAmount() {
-        return getGpa() > MIN_GPA ? STIPEND : 0.00;
+        return getGPA() > MIN_GPA ? STIPEND : 0.00;
     }
 
     @Override
