@@ -4,11 +4,11 @@ public abstract class Person {
     private String name;
     private String surname;
 
-    Person() {
+    public Person() {
         id = id_gen++;
     }
 
-    Person(String name, String surname) {
+    public Person(String name, String surname) {
         this();
         this.name = name;
         this.surname = surname;
