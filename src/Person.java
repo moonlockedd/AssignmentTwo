@@ -1,6 +1,6 @@
-public class Person {
+public abstract class Person {
     private static int id_gen = 1;
-    private int id;
+    private final int id;
     private String name;
     private String surname;
 
@@ -24,6 +24,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+    public abstract String getPosition();
 
     public String getSurname() {
         return surname;

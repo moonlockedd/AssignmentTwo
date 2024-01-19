@@ -12,6 +12,7 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    @Override
     public String getPosition() {
         return position;
     }
