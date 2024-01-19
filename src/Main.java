@@ -14,20 +14,20 @@ public class Main {
         Student student3 = new Student(
                 "Freddie", "Mercury", 2.49);
         Employee employee1 = new Employee(
-                "John", "Deacon", "Bass-player", 120499.99);
-        Employee employee2 = new Employee(
-                "Elton", "John", "Singer", 250000);
-        Employee employee3 = new Employee(
                 "Elvis", "Presley", "Singer", 173333.33);
+        Employee employee2 = new Employee(
+                "John", "Deacon", "Bass-player", 120499.99);
+        Employee employee3 = new Employee(
+                "Elton", "John", "Singer", 250000);
 
         ArrayList<Person> people = new ArrayList<>();
 
-        people.add(employee1);
-        people.add(employee2);
+        people.add(student1);
         people.add(student2);
         people.add(student3);
+        people.add(employee1);
+        people.add(employee2);
         people.add(employee3);
-        people.add(student1);
 
         Collections.sort(people);
 
