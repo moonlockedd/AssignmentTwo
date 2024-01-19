@@ -28,7 +28,6 @@ public abstract class Person implements Payable, Comparable<Person> {
     public void setName(String name) {
         this.name = name;
     }
-    public abstract String getPosition();
 
     public String getSurname() {
         return surname;
@@ -37,6 +36,8 @@ public abstract class Person implements Payable, Comparable<Person> {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    public abstract String getPosition();
 
     @Override
     public int compareTo(Person p) {
@@ -49,8 +50,8 @@ public abstract class Person implements Payable, Comparable<Person> {
 
     @Override
     public String toString() {
-        return id + ". " +
-                name + " " +
-                surname;
+        return getId() + ". " +
+                getName() + " " +
+                getSurname();
     }
 }

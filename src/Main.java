@@ -17,6 +17,8 @@ public class Main {
                 "John", "Deacon", "Bass-player", 120499.99);
         Employee employee2 = new Employee(
                 "Elton", "John", "Singer", 250000);
+        Employee employee3 = new Employee(
+                "Elvis", "Presley", "Singer", 173333.33);
 
         ArrayList<Person> people = new ArrayList<>();
 
@@ -24,6 +26,7 @@ public class Main {
         people.add(employee2);
         people.add(student2);
         people.add(student3);
+        people.add(employee3);
         people.add(student1);
 
         Collections.sort(people);
@@ -33,8 +36,9 @@ public class Main {
 
     public static void printData(Iterable<Person> people) {
         for (Person p : people) {
-            System.out.println(
-                    p + " earns " + p.getPaymentAmount() + " tenge"
+            System.out.printf(
+                    p + " earns " + "%.2f" + " tenge\n",
+                    p.getPaymentAmount()
             );
         }
     }
