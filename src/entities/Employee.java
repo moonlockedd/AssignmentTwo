@@ -14,8 +14,6 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public void setPosition(String position) { this.position = position; }
-
     public double getSalary() {
         return salary;
     }
@@ -27,6 +25,10 @@ public class Employee extends Person {
     @Override
     public String getPosition() {
         return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     @Override
