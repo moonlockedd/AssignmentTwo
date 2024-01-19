@@ -8,11 +8,11 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
         Student student1 = new Student(
-                "Freddie", "Mercury", 2.49);
-        Student student2 = new Student(
                 "Brian", "May", 3.66);
-        Student student3 = new Student(
+        Student student2 = new Student(
                 "Roger", "Taylor", 3.1);
+        Student student3 = new Student(
+                "Freddie", "Mercury", 2.49);
         Employee employee1 = new Employee(
                 "John", "Deacon", "Bass-player", 120499.99);
         Employee employee2 = new Employee(
