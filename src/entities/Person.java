@@ -2,7 +2,7 @@ package entities;
 
 import interfaces.Payable;
 
-public abstract class Person implements Payable {
+public abstract class Person implements Payable, Comparable<Person> {
     private static int id_gen = 1;
     private final int id;
     private String name;
@@ -36,6 +36,15 @@ public abstract class Person implements Payable {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Override
+    public int compareTo(Person p) {
+        if (getPaymentAmount() < p.getPaymentAmount())
+            return -1;
+        else if (getPaymentAmount() > p.getPaymentAmount())
+            return 1;
+        return 0;
     }
 
     @Override

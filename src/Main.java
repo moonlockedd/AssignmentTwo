@@ -3,6 +3,7 @@ import entities.Person;
 import entities.Student;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +25,8 @@ public class Main {
         people.add(student2);
         people.add(student3);
         people.add(student1);
+
+        Collections.sort(people);
 
         printData(people);
     }
