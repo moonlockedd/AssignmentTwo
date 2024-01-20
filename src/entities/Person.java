@@ -12,12 +12,6 @@ public abstract class Person implements Payable, Comparable<Person> {
         id = id_gen++;
     }
 
-    public Person(String name, String surname) {
-        this();
-        setName(name);
-        setSurname(surname);
-    }
-
     public int getId() {
         return id;
     }
@@ -51,7 +45,8 @@ public abstract class Person implements Payable, Comparable<Person> {
 
     @Override
     public String toString() {
-        return getId() + ". " +
+        return getPosition() + ": " +
+                getId() + ". " +
                 getName() + " " +
                 getSurname();
     }

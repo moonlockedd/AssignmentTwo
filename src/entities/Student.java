@@ -33,9 +33,4 @@ public class Student extends Person {
     public double getPaymentAmount() {
         return getGPA() > MIN_GPA ? STIPEND : 0.00;
     }
-
-    @Override
-    public String toString() {
-        return "Student: " + super.toString();
-    }
 }

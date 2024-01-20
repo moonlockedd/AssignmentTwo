@@ -37,9 +37,4 @@ public class Employee extends Person {
     public double getPaymentAmount() {
         return getSalary();
     }
-
-    @Override
-    public String toString() {
-        return "Employee: " + super.toString();
-    }
 }
