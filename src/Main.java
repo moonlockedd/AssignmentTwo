@@ -7,6 +7,7 @@ import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
+        // Create some students and employees
         Student student1 = new Student(
                 "Brian", "May", 3.66);
         Student student2 = new Student(
@@ -20,8 +21,10 @@ public class Main {
         Employee employee3 = new Employee(
                 "Elton", "John", "Singer", 250000);
 
+        // Create and instantiate an arraylist
         ArrayList<Person> people = new ArrayList<>();
 
+        // Add students and employees to arraylit
         people.add(student1);
         people.add(student2);
         people.add(student3);
@@ -29,12 +32,16 @@ public class Main {
         people.add(employee2);
         people.add(employee3);
 
+        // Sort by their pay amount in ascending order
         Collections.sort(people);
 
+        // Print every Person and their pay
         printData(people);
     }
 
     public static void printData(Iterable<Person> people) {
+        // For each person in provided Iterable of type Person
+        // print their information and pay
         for (Person p : people) {
             System.out.printf(
                     p + " earns " + "%.2f" + " tenge\n",

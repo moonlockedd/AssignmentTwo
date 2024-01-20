@@ -8,6 +8,7 @@ public class Employee extends Person {
         super();
     }
 
+    // Parametrized constructor
     public Employee(String name, String surname, String position, double salary) {
         this();
         setName(name);
@@ -16,6 +17,7 @@ public class Employee extends Person {
         setSalary(salary);
     }
 
+    // Getters and setters
     public double getSalary() {
         return salary;
     }
@@ -24,6 +26,7 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    // Override getPosition to provide position of the employee
     @Override
     public String getPosition() {
         return position;
@@ -33,6 +36,7 @@ public class Employee extends Person {
         this.position = position;
     }
 
+    // getPaymentAmount implementation to provide current salary
     @Override
     public double getPaymentAmount() {
         return getSalary();

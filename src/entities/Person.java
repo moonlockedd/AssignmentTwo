@@ -4,14 +4,17 @@ import interfaces.Payable;
 
 public abstract class Person implements Payable, Comparable<Person> {
     private static int id_gen = 1;
+    // Id is unique to every instance and does not change
     private final int id;
     private String name;
     private String surname;
 
+    // Auto-incrementing id
     public Person() {
         id = id_gen++;
     }
 
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -32,8 +35,10 @@ public abstract class Person implements Payable, Comparable<Person> {
         this.surname = surname;
     }
 
+    // Abstract method that is overwritten in subclasses
     public abstract String getPosition();
 
+    // Compare people by their pay amount in ascending order
     @Override
     public int compareTo(Person p) {
         if (getPaymentAmount() < p.getPaymentAmount())
