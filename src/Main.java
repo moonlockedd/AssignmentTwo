@@ -24,7 +24,7 @@ public class Main {
         // Create and instantiate an arraylist
         ArrayList<Person> people = new ArrayList<>();
 
-        // Add students and employees to arraylit
+        // Add students and employees to arraylist
         people.add(student1);
         people.add(student2);
         people.add(student3);
