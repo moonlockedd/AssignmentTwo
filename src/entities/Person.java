@@ -9,7 +9,7 @@ public abstract class Person implements Payable, Comparable<Person> {
     private String name;
     private String surname;
 
-    // Default constructor that sets id for each Person and increments it
+    // No argument constructor that sets id for each Person and increments it
     public Person() {
         id = id_gen++;
     }

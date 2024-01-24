@@ -4,6 +4,7 @@ public class Employee extends Person {
     private String position;
     private double salary;
 
+    // No argument constructor that references Person no-arg constructor
     public Employee() {
         super();
     }

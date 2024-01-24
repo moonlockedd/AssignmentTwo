@@ -7,6 +7,7 @@ public class Student extends Person {
     // Minimum GPA that is required to receive stipend
     private static final double MIN_GPA = 2.67;
 
+    // No argument constructor that references Person no-arg constructor
     public Student() {
         super();
     }
